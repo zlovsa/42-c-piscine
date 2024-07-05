@@ -1,0 +1,209 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+ga-o6.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Wed Sep 23 12:57:29 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-4f441d9e-548a-4646-9f38-e598bcead0a3-3314751
+
+= Git history ==================================================================
+$> git -C /tmp/tmprQ6Bdz/user log --pretty='%H - %an, %ad : %s'
+6de103a12c53f42c0e3c5e3ffb140b666292a192 - Merrilee Carolee, Tue Sep 22 22:14:33 2020 +0300 : ex03 wo -c
+a62fcb50139c0c2eebf0787f9013132ff03e24c1 - Merrilee Carolee, Tue Sep 22 20:54:31 2020 +0300 : ex02 norm
+096c35186131367d6f28eb7e2fa9a8915be863d8 - Merrilee Carolee, Tue Sep 22 20:52:45 2020 +0300 : ex02 chgs
+91a47ee458f81cc00067f28736db7160faa5e242 - Merrilee Carolee, Tue Sep 22 20:43:01 2020 +0300 : ex02 chgs
+2afcd32b5f71026541aae0fa8c1594032eeb100d - Merrilee Carolee, Tue Sep 22 20:27:02 2020 +0300 : ex02 chgs
+94350a1c18b013b22ad53a4cb8d2ec122adb2f62 - Merrilee Carolee, Tue Sep 22 20:15:19 2020 +0300 : ex00-ex01 chgs
+f2d2ebc1a8b9cdd5a4eefd29e6732cfa6cab7d5a - Merrilee Carolee, Tue Sep 22 20:03:27 2020 +0300 : ex00 chg
+140f5b2aa0a11fca155065abcfa3384ffdc0ec3c - Merrilee Carolee, Tue Sep 22 19:48:08 2020 +0300 : ex03
+bdbef6e081f8275900167598805c0a25ab731da7 - Merrilee Carolee, Tue Sep 22 14:27:57 2020 +0300 : ex02 chg
+3fb8ec929870508871879fe26b75e3dd5d0b5ea7 - Merrilee Carolee, Tue Sep 22 14:10:35 2020 +0300 : ex02 tests
+f4c84e8d577d1209ddb4cf50d4a9830d2c708233 - Merrilee Carolee, Tue Sep 22 13:57:22 2020 +0300 : ex02 done
+d420dd53a31b44a3ec20f6d4a20091ba02ff7470 - Merrilee Carolee, Tue Sep 22 13:12:20 2020 +0300 : ex02 fcomm
+c4b856d5ff991ccb7f4d944be9b56a98d4f5443d - Merrilee Carolee, Tue Sep 22 10:17:27 2020 +0300 : ex01 done
+805c92b3dddd81aaa9ce7b520060ed6595968e83 - Merrilee Carolee, Tue Sep 22 09:46:02 2020 +0300 : ex00 ex01 mod
+da2c42cef2c382aed90f2399c86a72601907af1b - Merrilee Carolee, Mon Sep 21 14:57:56 2020 +0300 : ex01 mod
+c7cf22b0b172aab0c57d982fc77ec9542e065322 - Merrilee Carolee, Mon Sep 21 14:44:44 2020 +0300 : ex01
+34947ae356dbeedc266fb43e62b4cc0f92d3ea49 - Merrilee Carolee, Mon Sep 21 13:47:49 2020 +0300 : ex00 norm close
+2449b5c03fe607a1e2c1b882e8f670ef3cfa6823 - Merrilee Carolee, Mon Sep 21 13:32:13 2020 +0300 : ex00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmprQ6Bdz/user
+total 24
+-rw-r--r-- 1 root wheel 75 Sep 23 12:57 .gitignore
+-rw-r--r-- 1 root wheel 5930 Sep 23 12:57 __GIT_HISTORY
+drwxr-xr-x 4 root wheel 128 Sep 23 12:57 ex00
+drwxr-xr-x 5 root wheel 160 Sep 23 12:57 ex01
+drwxr-xr-x 5 root wheel 160 Sep 23 12:57 ex02
+drwxr-xr-x 6 root wheel 192 Sep 23 12:57 ex03
+
+/tmp/tmprQ6Bdz/user/ex00:
+total 16
+-rw-r--r-- 1 root wheel 328 Sep 23 12:57 Makefile
+-rw-r--r-- 1 root wheel 1674 Sep 23 12:57 ft_display_file.c
+
+/tmp/tmprQ6Bdz/user/ex01:
+total 24
+-rw-r--r-- 1 root wheel 320 Sep 23 12:57 Makefile
+-rw-r--r-- 1 root wheel 2106 Sep 23 12:57 ft_cat.c
+-rw-r--r-- 1 root wheel 1216 Sep 23 12:57 ft_cat2.c
+
+/tmp/tmprQ6Bdz/user/ex02:
+total 24
+-rw-r--r-- 1 root wheel 323 Sep 23 12:57 Makefile
+-rw-r--r-- 1 root wheel 2828 Sep 23 12:57 ft_tail.c
+-rw-r--r-- 1 root wheel 2230 Sep 23 12:57 ft_tail2.c
+
+/tmp/tmprQ6Bdz/user/ex03:
+total 32
+-rw-r--r-- 1 root wheel 346 Sep 23 12:57 Makefile
+-rw-r--r-- 1 root wheel 3396 Sep 23 12:57 ft_hexdump.c
+-rw-r--r-- 1 root wheel 1972 Sep 23 12:57 ft_hexdump2.c
+-rw-r--r-- 1 root wheel 1756 Sep 23 12:57 ft_hexdump3.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette ft_display_file.c | grep -E '^(Error|Warning)'
+
+$> make clean && make && make fclean && make && make clean && ls -la ft_display_file
+rm -f ft_display_file.o
+gcc -Wall -Wextra -Werror -c ft_display_file.c -o ft_display_file.o
+gcc -Wall -Wextra -Werror ft_display_file.o -o ft_display_file
+rm -f ft_display_file.o
+rm -f ft_display_file
+gcc -Wall -Wextra -Werror -c ft_display_file.c -o ft_display_file.o
+gcc -Wall -Wextra -Werror ft_display_file.o -o ft_display_file
+rm -f ft_display_file.o
+-rwxr-xr-x 1 deepthought deepthought 8772 Sep 23 09:57 ft_display_file
+
+= Test 1 ===================================================
+$> ./913t1qsnbd7ufr1v9l94emtz
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./qs763hmasdhdpim4gp7tmkgo pouet pouic
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./9vfsklxr8yvrlknzdzfiqbnu doesnt_exist
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./sxr84x2jik720j0y2y49ubcy ./test4.output
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./8pm060a4s7nst1l45hy7fslb ./test5.output
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./q8e2aq1h5or6xe4fwjqxds5g ./test6.output
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./zy01eyzsat9acuq0mn5xxb0v ./test7.output
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./isvhx9xw5k7f00hkft6ydgsc ./test8.output
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./x9wt0g65vt67oewu11eubkxj ./test9.output
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./fc53qvn8a6ic5h2fg5sxluhm ./test10.output
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./azsjsacl157h9qqudz5a2hmi ./test11.output
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./rksdv2t01f0kc4n5ifrzxpx2 ./test12.output
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./j4unkhel4jebgmgrlfkurm0b ./test13.output
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./rxi0zro6v07p8pgd2n197w6y ./test14.output
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./3pvhi4zfxaoau9n84c20fs8n ./test15.output
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex01 =========================================================================
+$> /usr/bin/norminette ft_cat.c ft_cat2.c | grep -E '^(Error|Warning)'
+Error (line 19): declaration of ft_strcmp forbidden in .c
+Error (line 20): declaration of ft_putstr forbidden in .c
+
+Norme check FAILED
+Grade: 0
+
+= ex02 =========================================================================
+$> /usr/bin/norminette ft_tail2.c ft_tail.c | grep -E '^(Error|Warning)'
+Error (line 16): declaration of error forbidden in .c
+Error (line 21): declaration of ft_strcmp forbidden in .c
+Error (line 22): declaration of ft_putstr forbidden in .c
+Error (line 23): declaration of check_args forbidden in .c
+Error (line 24): declaration of tail_write forbidden in .c
+Error (line 25): declaration of ft_read forbidden in .c
+
+Norme check FAILED
+Grade: 0
+
+= ex03 =========================================================================
+$> /usr/bin/norminette ft_hexdump2.c ft_hexdump3.c ft_hexdump.c | grep -E '^(Error|Warning)'
+Error (line 18): declaration of ft_hexchar forbidden in .c
+Error (line 15): declaration of ft_strcmp forbidden in .c
+Error (line 16): declaration of ft_print_buf forbidden in .c
+Error (line 17): declaration of ft_print_hex16 forbidden in .c
+Error (line 18): declaration of ft_putstr forbidden in .c
+Error (line 20): declaration of error forbidden in .c
+Error (line 21): declaration of ft_strcmp forbidden in .c
+Error (line 22): declaration of ft_putstr forbidden in .c
+Error (line 23): declaration of check_args forbidden in .c
+Error (line 24): declaration of ft_print_hex16 forbidden in .c
+Error (line 25): declaration of put_hex forbidden in .c
+Error (line 26): declaration of final_print forbidden in .c
+Error (line 27): declaration of init forbidden in .c
+Error (line 28): declaration of init2 forbidden in .c
+
+Norme check FAILED
+Grade: 0
+
+= Final grade: 15 ==============================================================

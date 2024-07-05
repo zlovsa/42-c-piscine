@@ -1,0 +1,141 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+il-i1.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Wed Sep 16 11:36:04 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-3fe40435-ced2-494a-bd3c-2aa3cdbafbed-3304584
+
+= Git history ==================================================================
+$> git -C /tmp/tmpnTS4xA/user log --pretty='%H - %an, %ad : %s'
+41585d876313533087730fa106456da9e35f183a - Merrilee Carolee, Tue Sep 15 11:38:56 2020 +0300 : isspace git status
+830e4fcd555a817848b74221b57ccba917321652 - Merrilee Carolee, Mon Sep 14 13:30:55 2020 +0300 : ex05
+4b33fb37ee0116fc2e767beef913322a98492548 - Merrilee Carolee, Mon Sep 14 13:00:12 2020 +0300 : ex04
+b8c86bc3f3424b7013628d2c58248259bfd779c5 - Merrilee Carolee, Mon Sep 14 11:39:17 2020 +0300 : ex03
+c54e1143299d554faa5e96a9e8a910fcf8c0eba1 - Merrilee Carolee, Mon Sep 14 10:59:31 2020 +0300 : ex02
+535a75f6a9748f4260005a32888f45184d9078e7 - Merrilee Carolee, Mon Sep 14 10:48:19 2020 +0300 : ex01
+0e1160d74c2bf6de342e4196b358fe5601c06dda - Merrilee Carolee, Mon Sep 14 10:40:39 2020 +0300 : ex00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpnTS4xA/user
+total 16
+-rw-r--r-- 1 root wheel 22 Sep 16 11:36 .gitignore
+-rw-r--r-- 1 root wheel 1893 Sep 16 11:36 __GIT_HISTORY
+drwxr-xr-x 3 root wheel 96 Sep 16 11:36 ex00
+drwxr-xr-x 3 root wheel 96 Sep 16 11:36 ex01
+drwxr-xr-x 3 root wheel 96 Sep 16 11:36 ex02
+drwxr-xr-x 3 root wheel 96 Sep 16 11:36 ex03
+drwxr-xr-x 3 root wheel 96 Sep 16 11:36 ex04
+drwxr-xr-x 3 root wheel 96 Sep 16 11:36 ex05
+
+/tmp/tmpnTS4xA/user/ex00:
+total 8
+-rw-r--r-- 1 root wheel 1012 Sep 16 11:36 ft_strlen.c
+
+/tmp/tmpnTS4xA/user/ex01:
+total 8
+-rw-r--r-- 1 root wheel 997 Sep 16 11:36 ft_putstr.c
+
+/tmp/tmpnTS4xA/user/ex02:
+total 8
+-rw-r--r-- 1 root wheel 1163 Sep 16 11:36 ft_putnbr.c
+
+/tmp/tmpnTS4xA/user/ex03:
+total 8
+-rw-r--r-- 1 root wheel 1288 Sep 16 11:36 ft_atoi.c
+
+/tmp/tmpnTS4xA/user/ex04:
+total 8
+-rw-r--r-- 1 root wheel 1622 Sep 16 11:36 ft_putnbr_base.c
+
+/tmp/tmpnTS4xA/user/ex05:
+total 8
+-rw-r--r-- 1 root wheel 2018 Sep 16 11:36 ft_atoi_base.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlen.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlen.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./iqywfnp2iwwepn8ysuh83jz8
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putstr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_putstr.c ft_putstr.c -o user_exe
+
+= Test 1 ===================================================
+$> ./sa1eg1p6rsh117we4nvmtvot
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putnbr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putnbr.c -o user_exe
+
+= Test 1 ===================================================
+$> ./p7yln07l1mqthb7p9kephtx5
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_atoi.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_atoi.c -o user_exe
+
+= Test 1 ===================================================
+$> ./ybhvw3en9ync6hwkowmj4a3t
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putnbr_base.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putnbr_base.c -o user_exe
+
+= Test 1 ===================================================
+$> ./0u8a8x6ax52jhlpyj8v63i5q
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_atoi_base.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_atoi_base.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./e4hlgb2gt5xkmddpd2c2wjne
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= Final grade: 100 =============================================================

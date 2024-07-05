@@ -1,0 +1,153 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+mi-l2.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Sun Sep 20 12:00:20 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-c4fadec7-c878-4a44-9b3c-48c0711922c6-3309607
+
+= Git history ==================================================================
+$> git -C /tmp/tmpwdxTHW/user log --pretty='%H - %an, %ad : %s'
+7c59d800c7a40f8ad75ffec897923a2b092ca388 - Merrilee Carolee, Sat Sep 19 20:31:44 2020 +0300 : ex04 free on error
+f34d33f62afa6613fdc023324d95454dd7a2d463 - Merrilee Carolee, Sat Sep 19 19:57:51 2020 +0300 : ex00-ex02 mod
+b4f3cc3fec6e2fb9f37a7bd779286e5f71191d9d - Merrilee Carolee, Sat Sep 19 19:29:19 2020 +0300 : ex04-ex05 modifgit status
+d726d528d29cf7b73d0565fc075c55f10b09e673 - Merrilee Carolee, Sat Sep 19 16:14:10 2020 +0300 : ex00 mod
+9302e6d547a3f1d24dabda43eb07a6dfced2eaa1 - Merrilee Carolee, Sat Sep 19 15:45:39 2020 +0300 : ex04-ex05 w check
+6929417f24b06dc90e4b1bbbdb826de4af621f30 - Merrilee Carolee, Sat Sep 19 15:32:36 2020 +0300 : ex04 wo check
+939a65eae6c88d4126ffa1c1c5a7a1b8de96fb3b - Merrilee Carolee, Sat Sep 19 15:07:26 2020 +0300 : ex03
+0555ea6137f5ce48a0c67de3bced4081566e49f6 - Merrilee Carolee, Sat Sep 19 14:56:07 2020 +0300 : ex02
+154617316f3280f1e0aa4fcb18181502dd4a9f16 - Merrilee Carolee, Sat Sep 19 14:50:30 2020 +0300 : ex01
+6ace1ea7f6fbe9ac94895855098683d0f6ebcb7e - Merrilee Carolee, Sat Sep 19 13:55:43 2020 +0300 : ex00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpwdxTHW/user
+total 16
+-rw-r--r-- 1 root wheel 37 Sep 20 12:00 .gitignore
+-rw-r--r-- 1 root wheel 2653 Sep 20 12:00 __GIT_HISTORY
+drwxr-xr-x 3 root wheel 96 Sep 20 12:00 ex00
+drwxr-xr-x 3 root wheel 96 Sep 20 12:00 ex01
+drwxr-xr-x 3 root wheel 96 Sep 20 12:00 ex02
+drwxr-xr-x 3 root wheel 96 Sep 20 12:00 ex03
+drwxr-xr-x 3 root wheel 96 Sep 20 12:00 ex04
+drwxr-xr-x 3 root wheel 96 Sep 20 12:00 ex05
+
+/tmp/tmpwdxTHW/user/ex00:
+total 8
+-rw-r--r-- 1 root wheel 1094 Sep 20 12:00 ft.h
+
+/tmp/tmpwdxTHW/user/ex01:
+total 8
+-rw-r--r-- 1 root wheel 1185 Sep 20 12:00 ft_boolean.h
+
+/tmp/tmpwdxTHW/user/ex02:
+total 8
+-rw-r--r-- 1 root wheel 993 Sep 20 12:00 ft_abs.h
+
+/tmp/tmpwdxTHW/user/ex03:
+total 8
+-rw-r--r-- 1 root wheel 994 Sep 20 12:00 ft_point.h
+
+/tmp/tmpwdxTHW/user/ex04:
+total 8
+-rw-r--r-- 1 root wheel 1882 Sep 20 12:00 ft_strs_to_tab.c
+
+/tmp/tmpwdxTHW/user/ex05:
+total 8
+-rw-r--r-- 1 root wheel 1493 Sep 20 12:00 ft_show_tab.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette ft.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_other.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror main.c ft_other.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./taob98pwylvak90bzghw9a04
+$> ./taob98pwylvak90bzghw9a04
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+All tests OK
+Grade: 1
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckDefine ft_boolean.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_boolean.c -o user_exe
+
+= Test 1 ===================================================
+$> ./fngcy4gk4k9f0owtsgn2bch3 un
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+All tests OK
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckDefine ft_abs.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./ml9ti30h52weupej9vn7shoq
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+All tests OK
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette ft_point.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_point.c -o user_exe
+
+= Test 1 ===================================================
+$> ./dtaxx8i8zz70iivzd4b4q79j
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+All tests OK
+Grade: 19
+
+= ex04 =========================================================================
+$> /usr/bin/norminette ft_strs_to_tab.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_show_tab.c ft_strs_to_tab.c -o user_exe
+
+= Test 1 ===================================================
+$> ./kd6cp6z2item43zww9ho8xit
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+All tests OK
+Grade: 30
+
+= ex05 =========================================================================
+$> /usr/bin/norminette ft_show_tab.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strs_to_tab.c ft_show_tab.c -o user_exe
+
+= Test 1 ===================================================
+$> ./vgh5919zf94sdo5ater5debo
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+All tests OK
+Grade: 30
+
+= Final grade: 100 =============================================================

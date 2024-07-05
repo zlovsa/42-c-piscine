@@ -1,0 +1,288 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+oa-c4.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Sat Sep 26 17:14:43 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-6090d5d4-d989-4e80-bc1c-5713a331ad2c-3318474
+
+= Git history ==================================================================
+$> git -C /tmp/tmp_y5UAX/user log --pretty='%H - %an, %ad : %s'
+0a08c569cb30a8dc6dc27afd5c34a42f2720903a - Merrilee Carolee, Fri Sep 25 20:36:19 2020 +0300 : ex04 chg
+484c067bfcba4785819891e076476ae4f6ca30af - Merrilee Carolee, Fri Sep 25 10:06:55 2020 +0300 : ex07 04 06 chgs
+bf9d257cd9ac1f1d3d163783fd7377cbd809d55e - Merrilee Carolee, Fri Sep 25 09:51:44 2020 +0300 : ex00-ex07
+a5d03be0d673839b1014d959ff72edf5f02096a9 - Merrilee Carolee, Fri Sep 25 09:36:44 2020 +0300 : init comm
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp_y5UAX/user
+total 16
+-rw-r--r-- 1 root wheel 22 Sep 26 17:15 .gitignore
+-rw-r--r-- 1 root wheel 2592 Sep 26 17:15 __GIT_HISTORY
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex00
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex01
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex02
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex03
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex04
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex05
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex06
+drwxr-xr-x 4 root wheel 128 Sep 26 17:15 ex07
+
+/tmp/tmp_y5UAX/user/ex00:
+total 16
+-rw-r--r-- 1 root wheel 1124 Sep 26 17:15 btree_create_node.c
+-rw-r--r-- 1 root wheel 1105 Sep 26 17:15 ft_btree.h
+
+/tmp/tmp_y5UAX/user/ex01:
+total 16
+-rw-r--r-- 1 root wheel 1132 Sep 26 17:15 btree_apply_prefix.c
+-rw-r--r-- 1 root wheel 1171 Sep 26 17:15 ft_btree.h
+
+/tmp/tmp_y5UAX/user/ex02:
+total 16
+-rw-r--r-- 1 root wheel 1129 Sep 26 17:15 btree_apply_infix.c
+-rw-r--r-- 1 root wheel 1170 Sep 26 17:15 ft_btree.h
+
+/tmp/tmp_y5UAX/user/ex03:
+total 16
+-rw-r--r-- 1 root wheel 1132 Sep 26 17:15 btree_apply_suffix.c
+-rw-r--r-- 1 root wheel 1171 Sep 26 17:15 ft_btree.h
+
+/tmp/tmp_y5UAX/user/ex04:
+total 16
+-rw-r--r-- 1 root wheel 1464 Sep 26 17:15 btree_insert_data.c
+-rw-r--r-- 1 root wheel 1193 Sep 26 17:15 ft_btree.h
+
+/tmp/tmp_y5UAX/user/ex05:
+total 16
+-rw-r--r-- 1 root wheel 1255 Sep 26 17:15 btree_search_item.c
+-rw-r--r-- 1 root wheel 1197 Sep 26 17:15 ft_btree.h
+
+/tmp/tmp_y5UAX/user/ex06:
+total 16
+-rw-r--r-- 1 root wheel 1125 Sep 26 17:15 btree_level_count.c
+-rw-r--r-- 1 root wheel 1146 Sep 26 17:15 ft_btree.h
+
+/tmp/tmp_y5UAX/user/ex07:
+total 16
+-rw-r--r-- 1 root wheel 1778 Sep 26 17:15 btree_apply_by_level.c
+-rw-r--r-- 1 root wheel 1313 Sep 26 17:15 ft_btree.h
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette ft_btree.h btree_create_node.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c -o user_exe
+
+= Test 1 ===================================================
+$> ./o1nlosax05dt3wxzj8pkkdzm "lbGxOIz"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./qviwky2aeyuakbg05zsa72l4 "euCYzKEb"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./bb0duibeikja03z9h077c28k "DG7"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette ft_btree.h btree_apply_prefix.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c btree_apply_prefix.c -o user_exe
+
+= Test 1 ===================================================
+$> ./1v3gl3nql6neq7rhqgpcr5oy "w7fCuiAhIK4H" "z8O4wXNPQ" "GZTY0UlwO9" "lF15ZjwIM" "cxfi58qEm4ZB" "koX" "jI45X" "juCU"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./j63vqgin4ok1spj4ukxbvw7x "XOB" "4awmyfv61x" "t5j" "Ks27Iby" "c9" "XHvhguWQDT3" "1FApNW" "lOguT"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./0g4pzfugs77fddmq728r4m35 "X73" "w3" "s4xeydR" "s3APyIf" "do" "WBElqL9dX6ie" "xp3Vq2" "yY21q4Ufzk"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette btree_apply_infix.c ft_btree.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror btree_apply_infix.c main.c btree_create_node.c -o user_exe
+
+= Test 1 ===================================================
+$> ./9k5o0uex6x1fpx8dq42ndb5t "GYIcuofO" "LrdtO" "YVus6CeE" "PZXxfdi" "t" "UvHojYe" "ueJS7LEcZ" "szKmd"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./zxgpnwgysfi67sbpxf40p5hu "gmQn5cr" "XaQB3i4PUt" "35Zc" "Aoirns" "GXq" "wfzDb" "y" "6ZG"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./f4bka2w4iuerj8d0cqqbzcy3 "Mx" "KyA0DgaETw" "05mgwBMO" "GdoTr1yH5gbz" "TS1" "W1C" "6eZWJdoqN2ED" "IzC"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette btree_apply_suffix.c ft_btree.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_apply_suffix.c btree_create_node.c -o user_exe
+
+= Test 1 ===================================================
+$> ./iatki8i467aw2535h4gw691b "B7qwmKH" "y1a5gF" "ZJdjP5QozKm2" "RU" "ufVQa1LjpvFc" "xgNRA2SwQvP" "zqNYDSV" "sg"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./3bnv5ql7uc4e66wonhuuvh58 "L6KG" "LnUAy9jhfm" "jNq2AX" "mpcq" "Y1buiOMfVLQG" "4X1" "V" "t6"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./h0gkxmyypalmsxwluprm313c "PyB7Suobt" "goaEdeQ" "ygLMYID" "8T7" "lycQRka" "a" "2" "B"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex04 =========================================================================
+$> /usr/bin/norminette ft_btree.h btree_insert_data.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c btree_insert_data.c -o user_exe
+
+= Test 1 ===================================================
+$> ./s0thqwbcd5f9dlyy511npphw "rWXw"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./5fppcmpjkb3dyh5re8qn5phy "bEK0CeRB5tAm" "ud" "46Grf91X2cpj" "dD2" "H" "ANbh" "F"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./kvzic3llphfai4o7rif3izsx "iSD" "tpa" "d2Es0uVT" "Pv"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./az24z98271tw4hx94ndh35qh "6m" "0XFfdYm53g" "2nybgFHC8" "G" "j2hSsD" "pNe" "6iPAJ7wf" "ry0AhuRbi" "X" "FCpZc" "wMhn7Kx" "KPD6xBdiyp93" "ZTXMEKBm" "JSiBNq"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./cam1ri7rzq1q10w5ulqtbj6a "yt4fEKrNAbUu" "oLiS6q4" "G" "8xGlj591" "HT8cAuvQ6biP" "uGYUv" "EGaAdIZg" "xlk6Wr" "sbAapHLuO" "uLsE" "POQZJzkR3" "nFjy"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex05 =========================================================================
+$> /usr/bin/norminette btree_search_item.c ft_btree.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror btree_search_item.c main.c btree_create_node.c -o user_exe
+btree_search_item.c:23:8: error: using the result of an assignment as a condition without parentheses [-Werror,-Wparentheses]
+        if (f = btree_search_item(root->left, data_ref, cmpf))
+            ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+btree_search_item.c:23:8: note: place parentheses around the assignment to silence this warning
+        if (f = btree_search_item(root->left, data_ref, cmpf))
+              ^
+            ( )
+btree_search_item.c:23:8: note: use '==' to turn this assignment into an equality comparison
+        if (f = btree_search_item(root->left, data_ref, cmpf))
+              ^
+              ==
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex06 =========================================================================
+$> /usr/bin/norminette btree_level_count.c ft_btree.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror btree_level_count.c main.c btree_create_node.c -o user_exe
+
+= Test 1 ===================================================
+$> ./4lr6eigenbqhuxiualtfbvsd "lTQG" "E285pGMoxTh" "iY17CkLa5" "O3JjYil" "FeraMG0R" "qa1UhotuSFTI" "oQtDjVgc3rxA" "mCs0qNjyToGY"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./46dw6bvybr7ubi465z08dk5k "fX" "6MCGN2zZlq0g" "l2" "wqaU80eEzJf" "Ye" "46kRWpsv2" "lzZ3M92kjAxv" "w9U2iaK" "Ostw0aSHuh6" "H6sUX2VYacBe" "SNmy" "TQG9"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./rqgz4ncrmihajtjnds40cq77 "6SH3Jf2x" "wm3p8JbtX6zx" "6RE2LqaFrH" "5v" "K9Yp0" "kTXcrQ5Jp" "pRFA" "rY"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./z9ktisj56m0qlwzfjfomdsg0 "vXEJkOLy1W" "Z5yuh67V" "V" "hBneJCL" "tiVqJYkUgFS" "L4l" "6wPe" "T6r8KCViuf" "E7XCo" "3LE2PVTU" "ozFM5Q" "r2osb6" "1n0fMSoeO" "BjAI" "9VEZxq0" "aZTcxvk" "T0I5"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./ybakywq9945mxqwabgjutnzi "WDHhtyp6a" "ZnoOHwFNu" "6iVK" "4RFwxUzS5Or" "pwlhCkKOV" "5EG" "CUKHLrh" "QHoRCIp5f9X" "L"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex07 =========================================================================
+$> /usr/bin/norminette btree_apply_by_level.c ft_btree.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror btree_apply_by_level.c main.c btree_create_node.c -o user_exe
+
+= Test 1 ===================================================
+$> ./ht584wc5j5367p9oogoeeepm "qE" "8ZTLXt3d" "RQbAM4" "7XhmxJ" "g7c6CEWiqM" "W5Hv" "g4YZe" "kWsEJgX5"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./y5n207hh0gjwbx3b6lguvr6y "cdNjiGAJa" "hBHOc7Ux" "unDksgj" "8jcAbn" "lM" "xhap6c5" "9aBO" "ZltIiC" "41" "X8Yhc5rez" "Yc4" "rod" "OCP41LoHvi" "L1iV"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./bsbaldsk1177v555es0ymnd4 "3AN8IC9pT" "Zn" "0wsNDTa"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./5l75odjuq8funpcrf95jq7ru "17oRcF95G" "lAXgLuGDJpBQ" "E0DrO" "PBpEyf" "unXMd5IG" "TGOqP7K" "Usk26Ioh0F" "o" "h9kR2CVLdn" "My5g4ReS"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./vt4baknvasvw2k72imh3a8h1 "n9wTz7" "y"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= Final grade: 50 ==============================================================

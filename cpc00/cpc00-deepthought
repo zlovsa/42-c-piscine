@@ -1,0 +1,225 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+at-k5.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Fri Sep 11 11:46:26 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-77425c2a-2b45-4b00-9f0c-2da770693447-3299969
+
+= Git history ==================================================================
+$> git -C /tmp/tmpJVqgnl/user log --pretty='%H - %an, %ad : %s'
+77b5b85b15b239c813f99fa827a5f4d546cfdd89 - Merrilee Carolee, Thu Sep 10 10:37:32 2020 +0300 : norm check and gcc
+59c67553e8e364b6f2139281fb34c29f3ea3a6e8 - Merrilee Carolee, Thu Sep 10 09:57:10 2020 +0300 : ex08
+08ee1f4f57b0490773e395991a0dfa0fe604abf9 - Merrilee Carolee, Wed Sep 9 15:40:59 2020 +0300 : ex07
+df608b66403f48ed62055f52d16581d65f75a0fc - Merrilee Carolee, Wed Sep 9 15:27:20 2020 +0300 : ex06
+078fee2f21c4e4761fe678569ef7406f7150bcbe - Merrilee Carolee, Wed Sep 9 15:13:21 2020 +0300 : ex05
+125c0611d5329da2b07f8946eb04ecd0f1e2eb81 - Merrilee Carolee, Wed Sep 9 14:40:56 2020 +0300 : ex04
+8be09ec29eb666efc0ef2f5120a7daf4e2b652ea - Merrilee Carolee, Wed Sep 9 13:13:04 2020 +0300 : gtignr
+04e0f9efc7715f8500c3cdb6881fa92080f67ecf - Merrilee Carolee, Wed Sep 9 13:12:24 2020 +0300 : more excs
+d13366a0669553c38655c63869d5f66d88d6cc3e - Merrilee Carolee, Wed Sep 9 10:43:00 2020 +0300 : ex00 done
+8451be5d34df9b833cd3037a02aa3d190dcb96a9 - Merrilee Carolee, Wed Sep 9 10:19:41 2020 +0300 : ex00 file created
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpJVqgnl/user
+total 16
+-rw-r--r-- 1 root wheel 10 Sep 11 11:46 .gitignore
+-rw-r--r-- 1 root wheel 3339 Sep 11 11:46 __GIT_HISTORY
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex00
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex01
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex02
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex03
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex04
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex05
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex06
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex07
+drwxr-xr-x 3 root wheel 96 Sep 11 11:46 ex08
+
+/tmp/tmpJVqgnl/user/ex00:
+total 8
+-rw-r--r-- 1 root wheel 985 Sep 11 11:46 ft_putchar.c
+
+/tmp/tmpJVqgnl/user/ex01:
+total 8
+-rw-r--r-- 1 root wheel 1069 Sep 11 11:46 ft_print_alphabet.c
+
+/tmp/tmpJVqgnl/user/ex02:
+total 8
+-rw-r--r-- 1 root wheel 1085 Sep 11 11:46 ft_print_reverse_alphabet.c
+
+/tmp/tmpJVqgnl/user/ex03:
+total 8
+-rw-r--r-- 1 root wheel 1067 Sep 11 11:46 ft_print_numbers.c
+
+/tmp/tmpJVqgnl/user/ex04:
+total 8
+-rw-r--r-- 1 root wheel 1041 Sep 11 11:46 ft_is_negative.c
+
+/tmp/tmpJVqgnl/user/ex05:
+total 8
+-rw-r--r-- 1 root wheel 1344 Sep 11 11:46 ft_print_comb.c
+
+/tmp/tmpJVqgnl/user/ex06:
+total 8
+-rw-r--r-- 1 root wheel 1350 Sep 11 11:46 ft_print_comb2.c
+
+/tmp/tmpJVqgnl/user/ex07:
+total 8
+-rw-r--r-- 1 root wheel 1193 Sep 11 11:46 ft_putnbr.c
+
+/tmp/tmpJVqgnl/user/ex08:
+total 8
+-rw-r--r-- 1 root wheel 1394 Sep 11 11:46 ft_print_combn.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putchar.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_putchar.c ft_putchar.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror test_ft_putchar.c ft_putchar.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./gnzm7lbajerqiu84mu8y5k6k
+$> ./gnzm7lbajerqiu84mu8y5k6k
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_alphabet.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_alphabet.c ft_print_alphabet.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror test_ft_print_alphabet.c ft_print_alphabet.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./x1ji5p3bz4oo4tf87s3fuyr4
+$> ./x1ji5p3bz4oo4tf87s3fuyr4
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_reverse_alphabet.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_reverse_alphabet.c ft_print_reverse_alphabet.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror test_ft_print_reverse_alphabet.c ft_print_reverse_alphabet.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./y01uo3gnlzidjchs74zp9aix
+$> ./y01uo3gnlzidjchs74zp9aix
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_numbers.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_numbers.c ft_print_numbers.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror test_ft_print_numbers.c ft_print_numbers.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./jootaljzgf130d7po0ks0r3g
+$> ./jootaljzgf130d7po0ks0r3g
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_is_negative.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_is_negative.c -o user_exe
+
+= Test 1 ===================================================
+$> ./kvov8sw1prnpibbviiv63h0o
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_comb.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb.c ft_print_comb.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb.c ft_print_comb.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./pp11ij1wuffqp0uja3e5gtky
+$> ./pp11ij1wuffqp0uja3e5gtky
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_comb2.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb2.c ft_print_comb2.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb2.c ft_print_comb2.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./4dhs9h7wx2baheqy6j7eql8h
+$> ./4dhs9h7wx2baheqy6j7eql8h
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex07 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putnbr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putnbr.c -o user_exe
+
+= Test 1 ===================================================
+$> ./acxv6uxq2a47cgfxtoqsq2vi
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1 2020-09-11 08:46:50.000000000 +0000$
++++ test1.output 2020-09-11 08:46:50.000000000 +0000$
+@@ -1 +1 @@$
+-0-12147483647-459074634415427586-34989970-430291982575510195-137024577320543951191795701642-776098785-1674718321-22817697615926553001324109275-8201697316845834031319547514-1546595571-15335245631416669248-259818381-917191705-9106374191131101781-471236428-1617802741253741398-8759027151612817401-306654971-185066029-1861250642-483585702-4256926461706186027-150563105-18995921181181731567478950917-2269785955529901011650288593065077021727682900-18498936301113282706-1217791665-1184047018-901787395-13849762031429840277-15150745621158107130-19958317165300652091389248960-117210743531723108-117277707-1361856087-544075524-879326553-859910131-1755326784-142975997-1654671751758411449-128459324221385190361971415166-1707785398699944320916876585800318841094963951851209590-1634500325-15752942185688707641394163808-6479604-76280179113513331141489206162232216121-10693348017478884321545755022-690361802-112756182042765485313277383-1015055737112115379-892425487-1337277160-14344494171836281130-1990485529-126
+ 9990014$
+\ No newline at end of file$
++0-12147483647-2147483648459074634415427586-34989970-430291982575510195-137024577320543951191795701642-776098785-1674718321-22817697615926553001324109275-8201697316845834031319547514-1546595571-15335245631416669248-259818381-917191705-9106374191131101781-471236428-1617802741253741398-8759027151612817401-306654971-185066029-1861250642-483585702-4256926461706186027-150563105-18995921181181731567478950917-2269785955529901011650288593065077021727682900-18498936301113282706-1217791665-1184047018-901787395-13849762031429840277-15150745621158107130-19958317165300652091389248960-117210743531723108-117277707-1361856087-544075524-879326553-859910131-1755326784-142975997-1654671751758411449-128459324221385190361971415166-1707785398699944320916876585800318841094963951851209590-1634500325-15752942185688707641394163808-6479604-76280179113513331141489206162232216121-10693348017478884321545755022-690361802-112756182042765485313277383-1015055737112115379-892425487-1337277160-14344494171836281130-1990
+ 485529-1269990014$
+\ No newline at end of file$
+
+Diff KO :(
+Grade: 0
+
+= ex08 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_combn.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_print_combn.c test_ft_print_combn.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror ft_print_combn.c test_ft_print_combn.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./rx7vw3gaf8bb9ru91ob3o5rk
+$> ./rx7vw3gaf8bb9ru91ob3o5rk
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= Final grade: 70 ==============================================================

@@ -1,0 +1,290 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+ox-k2.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Mon Sep 21 12:01:39 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-01c8b35b-8ecb-4da1-8ba0-4b6d6c187460-3312650
+
+= Git history ==================================================================
+$> git -C /tmp/tmp9upCQx/user log --pretty='%H - %an, %ad : %s'
+5324425a2f89c60f3c15fa928cafdd0e2beb3582 - Merrilee Carolee, Sun Sep 20 17:50:32 2020 +0300 : ex01 mod2
+9f5ace9530238f8bc723da3b6e8e0cd795214cc9 - Merrilee Carolee, Sun Sep 20 17:25:39 2020 +0300 : ex01 mod
+5775188c0d638c24e9c2d5d5c8d202d5128dff91 - Merrilee Carolee, Sun Sep 20 13:42:47 2020 +0300 : ex01
+684b29580bec0bdbf344635d6e629873163b44fc - Merrilee Carolee, Sun Sep 20 11:27:47 2020 +0300 : ex00
+ff00a8dac44fd4d9a199b6e32e8d15ed7bc7e103 - Merrilee Carolee, Sat Sep 19 16:24:47 2020 +0300 : ex02
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp9upCQx/user
+total 16
+-rw-r--r-- 1 root wheel 62 Sep 21 12:01 .gitignore
+-rw-r--r-- 1 root wheel 1587 Sep 21 12:01 __GIT_HISTORY
+drwxr-xr-x 8 root wheel 256 Sep 21 12:01 ex00
+drwxr-xr-x 3 root wheel 96 Sep 21 12:01 ex01
+drwxr-xr-x 3 root wheel 96 Sep 21 12:01 ex02
+
+/tmp/tmp9upCQx/user/ex00:
+total 48
+-rw-r--r-- 1 root wheel 959 Sep 21 12:01 ft_putchar.c
+-rw-r--r-- 1 root wheel 997 Sep 21 12:01 ft_putstr.c
+-rw-r--r-- 1 root wheel 1109 Sep 21 12:01 ft_strcmp.c
+-rw-r--r-- 1 root wheel 992 Sep 21 12:01 ft_strlen.c
+-rw-r--r-- 1 root wheel 962 Sep 21 12:01 ft_swap.c
+-rw-r--r-- 1 root wheel 291 Sep 21 12:01 libft_creator.sh
+
+/tmp/tmp9upCQx/user/ex01:
+total 8
+-rw-r--r-- 1 root wheel 465 Sep 21 12:01 Makefile
+
+/tmp/tmp9upCQx/user/ex02:
+total 8
+-rw-r--r-- 1 root wheel 2108 Sep 21 12:01 ft_split.c
+ 
+= ex00 =========================================================================
+
+$> gcc -Wextra -Wall -Werror main.c -o user_exe -L. -lft
+
+$> ./user_exe
+$> diff -U 3 user_output test1.output | cat -e
+
+Diff OK :D
+Grade: 30
+
+= ex01 =========================================================================
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putstr.c
+ft_strcmp.c
+ft_strlen.c
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putstr.c
+ft_strcmp.c
+ft_strlen.c
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putstr.c
+ft_strcmp.c
+ft_strlen.c
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putchar.o
+ft_putstr.c
+ft_strcmp.c
+ft_strcmp.o
+ft_strlen.c
+ft_strlen.o
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putchar.o
+ft_putstr.c
+ft_strcmp.c
+ft_strcmp.o
+ft_strlen.c
+ft_strlen.o
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putchar.o
+ft_putstr.c
+ft_strcmp.c
+ft_strcmp.o
+ft_strlen.c
+ft_strlen.o
+ft_swap.c
+
+$> diff -U 3 user_output test1.output | cat -e
+--- user_output 2020-09-21 09:01:44.000000000 +0000$
++++ test1.output 2020-09-21 09:01:43.000000000 +0000$
+@@ -52,6 +52,7 @@$
+ sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command$
+ ft_noway.o$
+ includes$
++libft.a$
+ main.c$
+ srcs$
+ $
+@@ -64,14 +65,17 @@$
+ ft_putchar.c$
+ ft_putchar.o$
+ ft_putstr.c$
++ft_putstr.o$
+ ft_strcmp.c$
+ ft_strcmp.o$
+ ft_strlen.c$
+ ft_strlen.o$
+ ft_swap.c$
++ft_swap.o$
+ sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command$
+ ft_noway.o$
+ includes$
++libft.a$
+ main.c$
+ srcs$
+ $
+@@ -84,14 +88,17 @@$
+ ft_putchar.c$
+ ft_putchar.o$
+ ft_putstr.c$
++ft_putstr.o$
+ ft_strcmp.c$
+ ft_strcmp.o$
+ ft_strlen.c$
+ ft_strlen.o$
+ ft_swap.c$
++ft_swap.o$
+ sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command$
+ ft_noway.o$
+ includes$
++libft.a$
+ main.c$
+ srcs$
+ $
+@@ -104,8 +111,10 @@$
+ ft_putchar.c$
+ ft_putchar.o$
+ ft_putstr.c$
++ft_putstr.o$
+ ft_strcmp.c$
+ ft_strcmp.o$
+ ft_strlen.c$
+ ft_strlen.o$
+ ft_swap.c$
++ft_swap.o$
+
+Diff KO :(
+Grade: 0
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_split.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_split.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./e2t6spm1d41uv3284zw0datj " " " "
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./1hvteqazsuyu0214bv6s6yn7 " " " "
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./s9c8xwykhflrl0g2y69699b7 "g2I3QOUp9" "g2I3QOUp9"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./ve6sql9mdi7ysgp0va9hnirh "BTlzt" "BTlzt"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./g3pii2sebn5jechxzwyeuugj "oYC4z wjW4iLPSO6FrHEmKPqqNSPemn" "0Yla"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./zz8eg90gnzeg6aqqqgwbls5h "6YyGjFGCkznbiKrYKUcyNKc3EoNeL4mdm0xnC5XByIII8xt" "vgy1"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+--- user_output_test6 2020-09-21 09:01:48.000000000 +0000$
++++ test6.output 2020-09-21 09:01:48.000000000 +0000$
+@@ -1,7 +1,7 @@$
+ 6YyGjFGCkznbiKrYKUcyNKc3EoNeL4mdm0xnC5XByIII8xt vgy1$
+ tab start$
+ tab[0]: 6Y$
+-tab[1]: GjFGCkznbiKrYKUcIII8xt$
++tab[1]: GjFGCkznbiKrYKUc$
+ tab[2]: NKc3EoNeL4mdm0xnC5XB$
+ tab[3]: III8xt$
+ tab end$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 30 ==============================================================

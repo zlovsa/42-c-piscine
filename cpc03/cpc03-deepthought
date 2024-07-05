@@ -1,0 +1,143 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+vo-l2.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Mon Sep 14 11:27:35 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-58d4ad5b-6bbd-4f51-8c75-6cea2f62a797-3301445
+
+= Git history ==================================================================
+$> git -C /tmp/tmpeiPutE/user log --pretty='%H - %an, %ad : %s'
+69fff7d5235bd0096d0d4cdb8b082a78bbe0d44d - Merrilee Carolee, Sun Sep 13 18:55:17 2020 +0300 : ex05
+183640c6f8667dd3d8baf986199a77a5663b5f37 - Merrilee Carolee, Sun Sep 13 15:50:31 2020 +0300 : ex04
+9cc6b3964179b10669e4694f2a7eb07b948f49b0 - Merrilee Carolee, Sun Sep 13 15:27:10 2020 +0300 : ex03
+1482e58187c53bd39c482f7ad8ed6e0a9d402231 - Merrilee Carolee, Sun Sep 13 14:59:54 2020 +0300 : ex02
+a3d33fa6a30cdacca7cf5aa95dd7ce17eb72fb9e - Merrilee Carolee, Sun Sep 13 13:55:11 2020 +0300 : ex01 simplified
+f6e0bc94b51ab86ef54f8aae30161e41206e4a69 - Merrilee Carolee, Sun Sep 13 13:49:04 2020 +0300 : ex00 siplified
+46d24e5a30663d01633662dbb2082f4c78bab6f3 - Merrilee Carolee, Sun Sep 13 13:31:30 2020 +0300 : ex01 norm
+54cc32cd7d2e8a3b5c85cda69ca61b36fb7b78a5 - Merrilee Carolee, Sun Sep 13 13:26:41 2020 +0300 : ex01
+df533766c8f49118fe6b9b971a88998edea957cf - Merrilee Carolee, Sun Sep 13 13:08:41 2020 +0300 : ex00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpeiPutE/user
+total 16
+-rw-r--r-- 1 root wheel 22 Sep 14 11:27 .gitignore
+-rw-r--r-- 1 root wheel 2290 Sep 14 11:27 __GIT_HISTORY
+drwxr-xr-x 3 root wheel 96 Sep 14 11:27 ex00
+drwxr-xr-x 3 root wheel 96 Sep 14 11:27 ex01
+drwxr-xr-x 3 root wheel 96 Sep 14 11:27 ex02
+drwxr-xr-x 3 root wheel 96 Sep 14 11:27 ex03
+drwxr-xr-x 3 root wheel 96 Sep 14 11:27 ex04
+drwxr-xr-x 3 root wheel 96 Sep 14 11:27 ex05
+
+/tmp/tmpeiPutE/user/ex00:
+total 8
+-rw-r--r-- 1 root wheel 1109 Sep 14 11:27 ft_strcmp.c
+
+/tmp/tmpeiPutE/user/ex01:
+total 8
+-rw-r--r-- 1 root wheel 1170 Sep 14 11:27 ft_strncmp.c
+
+/tmp/tmpeiPutE/user/ex02:
+total 8
+-rw-r--r-- 1 root wheel 1060 Sep 14 11:27 ft_strcat.c
+
+/tmp/tmpeiPutE/user/ex03:
+total 8
+-rw-r--r-- 1 root wheel 1097 Sep 14 11:27 ft_strncat.c
+
+/tmp/tmpeiPutE/user/ex04:
+total 8
+-rw-r--r-- 1 root wheel 1263 Sep 14 11:27 ft_strstr.c
+
+/tmp/tmpeiPutE/user/ex05:
+total 8
+-rw-r--r-- 1 root wheel 1253 Sep 14 11:27 ft_strlcat.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcmp.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcmp.c -o user_exe
+
+= Test 1 ===================================================
+$> ./d9edtdd3jg9b91zz88yb4f0u
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncmp.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strncmp.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./p6owmhb32mhp708o9fo1z1u9
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcat.c -o user_exe
+
+= Test 1 ===================================================
+$> ./4gzgd9ygyom0oqjt0qx1636g
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strncat.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./9szfvxkwbrahn80qvzy56e87
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strstr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strstr.c -o user_exe
+
+= Test 1 ===================================================
+$> ./qfcw2bp0frobn4fq2pos54sq
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 25
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlcat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlcat.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./vqlszsfqro1a397s3e4dirna
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 25
+
+= Final grade: 100 =============================================================

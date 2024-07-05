@@ -1,0 +1,197 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+mi-w6.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Sat Sep 12 16:33:43 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-854fabca-971e-4ba4-911d-bbf6d983ce96-3300039
+
+= Git history ==================================================================
+$> git -C /tmp/tmpmbYGpd/user log --pretty='%H - %an, %ad : %s'
+88b0e620cbe9c65740a414c1c9a7f6e6a1417003 - Merrilee Carolee, Thu Sep 10 12:54:11 2020 +0300 : ex03-08
+f2baa9d8e8325f4654c24b33043976ab7e8cabbe - Merrilee Carolee, Thu Sep 10 12:06:12 2020 +0300 : ex02
+60c405fe6c50bee8b2cb42881d8540d86c6d2756 - Merrilee Carolee, Thu Sep 10 11:52:20 2020 +0300 : ex01
+1df24c199ea0ccbfa94c5a8ad729a6b229ec2adc - Merrilee Carolee, Thu Sep 10 11:03:18 2020 +0300 : ex00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpmbYGpd/user
+total 16
+-rw-r--r-- 1 root wheel 23 Sep 12 16:33 .gitignore
+-rw-r--r-- 1 root wheel 1290 Sep 12 16:33 __GIT_HISTORY
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex00
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex01
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex02
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex03
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex04
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex05
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex06
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex07
+drwxr-xr-x 3 root wheel 96 Sep 12 16:33 ex08
+
+/tmp/tmpmbYGpd/user/ex00:
+total 8
+-rw-r--r-- 1 root wheel 952 Sep 12 16:33 ft_ft.c
+
+/tmp/tmpmbYGpd/user/ex01:
+total 8
+-rw-r--r-- 1 root wheel 994 Sep 12 16:33 ft_ultimate_ft.c
+
+/tmp/tmpmbYGpd/user/ex02:
+total 8
+-rw-r--r-- 1 root wheel 993 Sep 12 16:33 ft_swap.c
+
+/tmp/tmpmbYGpd/user/ex03:
+total 8
+-rw-r--r-- 1 root wheel 1028 Sep 12 16:33 ft_div_mod.c
+
+/tmp/tmpmbYGpd/user/ex04:
+total 8
+-rw-r--r-- 1 root wheel 1055 Sep 12 16:33 ft_ultimate_div_mod.c
+
+/tmp/tmpmbYGpd/user/ex05:
+total 8
+-rw-r--r-- 1 root wheel 1025 Sep 12 16:33 ft_putstr.c
+
+/tmp/tmpmbYGpd/user/ex06:
+total 8
+-rw-r--r-- 1 root wheel 1019 Sep 12 16:33 ft_strlen.c
+
+/tmp/tmpmbYGpd/user/ex07:
+total 8
+-rw-r--r-- 1 root wheel 1123 Sep 12 16:33 ft_rev_int_tab.c
+
+/tmp/tmpmbYGpd/user/ex08:
+total 8
+-rw-r--r-- 1 root wheel 1252 Sep 12 16:33 ft_sort_int_tab.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ft.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_ft.c test_ft_ft.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror ft_ft.c test_ft_ft.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./9g69s41ju78v28koopfxwgca
+$> ./9g69s41ju78v28koopfxwgca
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ultimate_ft.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_ultimate_ft.c test_ft_ultimate_ft.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror ft_ultimate_ft.c test_ft_ultimate_ft.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./9zj8bdyjs45g1mcky9bs48mh
+$> ./9zj8bdyjs45g1mcky9bs48mh
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_swap.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_swap.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./t3oyg1og7h0to3f4ios9vil7
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_div_mod.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_div_mod.c -o user_exe
+
+= Test 1 ===================================================
+$> ./qx6m5xzd577czkn7apcgv6n9
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ultimate_div_mod.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_ultimate_div_mod.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./1wuuf61w90bfz0fb810t4xvp
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putstr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_putstr.c ft_putstr.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror test_ft_putstr.c ft_putstr.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./qhgilxg2qqmtza2vfm5e21r6
+$> ./qhgilxg2qqmtza2vfm5e21r6
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlen.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlen.c test_ft_strlen.c -o user_exe
+
+$> gcc -Wextra -Wall -Werror ft_strlen.c test_ft_strlen.c -o ref_exe
+
+= Test 1 ===================================================
+$> ./js7x9xjhbckql626jvevw1mk
+$> ./js7x9xjhbckql626jvevw1mk
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex07 =========================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_rev_int_tab.c -o user_exe
+
+= Test 1 ===================================================
+$> ./7bt67qwo421lu9xyjrit3mw7
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex08 =========================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_sort_int_tab.c -o user_exe
+
+= Test 1 ===================================================
+$> ./e08ujjv93tq6ldedjhl7k4d3
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= Final grade: 100 =============================================================

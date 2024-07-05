@@ -1,0 +1,447 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+mi-c1.msk.21-school.ru
+Darwin 18.7.0 x86_64
+$> date
+Sun Sep 13 16:57:26 MSK 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.msk.21-school.ru:vogsphere/intra-uuid-306e5b96-a772-434b-8902-460ef29009a8-3300041
+
+= Git history ==================================================================
+$> git -C /tmp/tmpwPgyIV/user log --pretty='%H - %an, %ad : %s'
+bc0fa29cc83ff390e8e60a557d3f157aa0e8ceae - Merrilee Carolee, Sat Sep 12 20:47:00 2020 +0300 : ex12
+92a353d90ad83087bfb23ceeddc166140c27d3fe - Merrilee Carolee, Sat Sep 12 17:37:21 2020 +0300 : ex11
+14166cbe241f22987903962bebd0e33db71bf972 - Merrilee Carolee, Sat Sep 12 17:04:14 2020 +0300 : ex10
+78f16d2495fec9a3a4afe452772838eefe00ea00 - Merrilee Carolee, Sat Sep 12 16:57:51 2020 +0300 : ex09
+c22a3e7f732ea63ca4bede227d592d6eed08f30f - Merrilee Carolee, Sat Sep 12 16:51:35 2020 +0300 : ex08
+21859f5c257e79c87fcf65576fb4a2288bb135b7 - Merrilee Carolee, Sat Sep 12 16:40:55 2020 +0300 : ex07
+9d48449633072794f3e576fcc5afbc48feeb929b - Merrilee Carolee, Sat Sep 12 15:56:06 2020 +0300 : ex06
+7569adc227f7d257fbf5c65aebf3a96a2005688a - Merrilee Carolee, Sat Sep 12 15:47:21 2020 +0300 : ex05
+3d1e4e702f33d4b7f2930da0b1949754abf9bb96 - Merrilee Carolee, Fri Sep 11 12:15:38 2020 +0300 : ex04
+6b74b1912f110d10ea8a8c22a1e15b1ae341fe04 - Merrilee Carolee, Fri Sep 11 12:04:59 2020 +0300 : ex03
+d2ad2b1aef6ed0b958db83199db8c2305d8bd5ab - Merrilee Carolee, Fri Sep 11 11:31:25 2020 +0300 : ex02
+cf7a2420853579e6278ae578c550ed3abf9d9b8d - Merrilee Carolee, Fri Sep 11 10:54:12 2020 +0300 : swp deleted
+85b45c3938476aaa56b441db24f003180bb3a9a3 - Merrilee Carolee, Fri Sep 11 10:50:58 2020 +0300 : ex01
+550009edbd22cfe1e24a389208bdb8468c1958a1 - Merrilee Carolee, Fri Sep 11 09:51:49 2020 +0300 : ex00 changes
+2429d12e1870abfac377c28f8f6cd7bc1c120b49 - Merrilee Carolee, Fri Sep 11 09:46:45 2020 +0300 : ex00
+902b18ae2f02a05db8bc1a5f982855096247c876 - Merrilee Carolee, Fri Sep 11 09:24:56 2020 +0300 : ignore
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpwPgyIV/user
+total 16
+-rw-r--r-- 1 root wheel 23 Sep 13 16:57 .gitignore
+-rw-r--r-- 1 root wheel 4090 Sep 13 16:57 __GIT_HISTORY
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex00
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex01
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex02
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex03
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex04
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex05
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex06
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex07
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex08
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex09
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex10
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex11
+drwxr-xr-x 3 root wheel 96 Sep 13 16:57 ex12
+
+/tmp/tmpwPgyIV/user/ex00:
+total 8
+-rw-r--r-- 1 root wheel 1098 Sep 13 16:57 ft_strcpy.c
+
+/tmp/tmpwPgyIV/user/ex01:
+total 8
+-rw-r--r-- 1 root wheel 1141 Sep 13 16:57 ft_strncpy.c
+
+/tmp/tmpwPgyIV/user/ex02:
+total 8
+-rw-r--r-- 1 root wheel 1157 Sep 13 16:57 ft_str_is_alpha.c
+
+/tmp/tmpwPgyIV/user/ex03:
+total 8
+-rw-r--r-- 1 root wheel 1118 Sep 13 16:57 ft_str_is_numeric.c
+
+/tmp/tmpwPgyIV/user/ex04:
+total 8
+-rw-r--r-- 1 root wheel 1122 Sep 13 16:57 ft_str_is_lowercase.c
+
+/tmp/tmpwPgyIV/user/ex05:
+total 8
+-rw-r--r-- 1 root wheel 1118 Sep 13 16:57 ft_str_is_uppercase.c
+
+/tmp/tmpwPgyIV/user/ex06:
+total 8
+-rw-r--r-- 1 root wheel 1117 Sep 13 16:57 ft_str_is_printable.c
+
+/tmp/tmpwPgyIV/user/ex07:
+total 8
+-rw-r--r-- 1 root wheel 1103 Sep 13 16:57 ft_strupcase.c
+
+/tmp/tmpwPgyIV/user/ex08:
+total 8
+-rw-r--r-- 1 root wheel 1072 Sep 13 16:57 ft_strlowcase.c
+
+/tmp/tmpwPgyIV/user/ex09:
+total 8
+-rw-r--r-- 1 root wheel 1548 Sep 13 16:57 ft_strcapitalize.c
+
+/tmp/tmpwPgyIV/user/ex10:
+total 8
+-rw-r--r-- 1 root wheel 1173 Sep 13 16:57 ft_strlcpy.c
+
+/tmp/tmpwPgyIV/user/ex11:
+total 8
+-rw-r--r-- 1 root wheel 1278 Sep 13 16:57 ft_putstr_non_printable.c
+
+/tmp/tmpwPgyIV/user/ex12:
+total 8
+-rw-r--r-- 1 root wheel 2067 Sep 13 16:57 ft_print_memory.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcpy.c -o user_exe
+
+= Test 1 ===================================================
+$> ./gp7h0j6m05pzwmfy6uhz6llj
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strncpy.c -o user_exe
+
+= Test 1 ===================================================
+$> ./ukrvyq9f5qc7lvu3i27e46z0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_alpha.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_alpha.c -o user_exe
+
+= Test 1 ===================================================
+$> ./tpcb3qk97g15dwfdnni3bntd
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_numeric.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_numeric.c -o user_exe
+
+= Test 1 ===================================================
+$> ./h50fyssj9zu7kzg53c18c2xb
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_lowercase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_str_is_lowercase.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./elk21skztoomyewvpefa31q8
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_uppercase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_uppercase.c -o user_exe
+
+= Test 1 ===================================================
+$> ./unkqppg6ptf2zkwfzm5ufsjp
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_printable.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_str_is_printable.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./ut8ove4n1rn1tyyjbygu0jn0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex07 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strupcase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strupcase.c -o user_exe
+
+= Test 1 ===================================================
+$> ./22m84eqdujzyglpn5xwg6uqi
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex08 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlowcase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strlowcase.c -o user_exe
+
+= Test 1 ===================================================
+$> ./kc5b6pq60545taz1nnqldyz1
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex09 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcapitalize.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strcapitalize.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./6obyarc4w3gqab79tpgm6ch3
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex10 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlcpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlcpy.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./8fv5u1if1fvwhs0771c3xntn
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex11 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putstr_non_printable.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putstr_non_printable.c -o user_exe
+
+= Test 1 ===================================================
+$> ./7yj25gp6umlj2y5970ng78vh
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1 2020-09-13 13:57:57.000000000 +0000$
++++ test1.output 2020-09-13 13:57:57.000000000 +0000$
+@@ -1 +1 @@$
+-w\.([<G\0*\*&\0c\0-\-#\)(:\+"\*+\)'\0!.\/-\.$\,)\-#Q\-!\+.\-0\*.\+$=z\,'\--?zL{|\/.\0d\-0m\-+T\+,\*.\0.\-.Q_w\*.\.)}O\-.\0b\)*Lc\,-\*(\-(\+"\-)*\-/\/*\+0\0-\.+\/#\*$\-0\,*\.*&\..W\0!\/.\-/\/-\(0\)+`\+!f\*/\*$\1cI\-/\-'\/-\.,\03\-&n\+/;\-$=u)Q\,,\-"\,#>\+&\0.\/,\0/\/.+\-,\.-\1b\1e\.,\,+\/-\)%[\..\-*\0'\-(\0"\,.*\,.X\0+\0&\0"\0,\/+\0*\*-\."]1\.-\*'\++N|\,/\0%o\,)\--\7f\.*J\),\/$m\,.=#\+-;\/,\)!Z?\0.D\0*\(0Q\0#v>\-*\."\08\0a\--\++\0&o\0"\/*\//\0/\,/\+.w`\+-\01\+.\1b[1;5;31mTROCK YOU42\08"$
+\ No newline at end of file$
++w\d8[<G\fa\96\0c\fd\c3\88:\a2\9b\87\f1.\ed\d4\b9\c3Q\c1\ae\d0\9e\a4=z\b7\cd?zL{|\ee\0d\d0m\cbT\ac\9e\fe\ceQ_w\9e\d9}O\ce\0b\8aLc\bd\98\c8\a2\c9*\cf\ea\b0\fd\db\e3\94\d0\ba\da&\deW\f1\ee\cf\ed\80\8b`\a1f\9f\94\1cI\cf\c7\ed\dc\03\c6n\af;\c4=u)Q\bc\c2\b3>\a6\fe\ec\ff\ee+\cc\dd\1b\1e\dc\bb\ed\85[\de\ca\f7\c8\f2\be*\beX\fb\f6\f2\fc\eb\fa\9d\d2]1\dd\97\abN|\bf\f5o\b9\cd\7f\daJ\8c\e4m\be=#\ad;\ec\81Z?\feD\fa\80Q\f3v>\ca\d2\08\0a\cd\ab\f6o\f2\ea\ef\ff\bf\aew`\ad\01\ae\1b[1;5;31mTROCK YOU42\08"$
+\ No newline at end of file$
+
+Diff KO :(
+Grade: 0
+
+= ex12 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_memory.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_print_memory.c -o user_exe
+
+= Test 1 ===================================================
+$> ./1g6kx26tltv98w8m7i09j14i
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1 2020-09-13 13:58:00.000000000 +0000$
++++ test1.output 2020-09-13 13:58:00.000000000 +0000$
+@@ -1,84 +1,84 @@$
+-0000000000000000: 0. .$
+-0000000000000000: 4b+* K.$
+-0000000000000000: 2a3e /- *>.$
+-0000000000000000: 7b4a /),, {J..$
+-0000000000000000: 5747 0&., 5f WG.._$
+-0000000000000000: 6f7b +-+, 01,/ o{....$
+-0000000000000000: )$-, *&// .,0b -, .......$
+-0000000000000000: /.+* *$23 *-,! )-6e ...#...n$
+-0000000000000000: 1a,% .'." 74-$ 66)/ *- ....t.f..$
+-0000000000000000: -#,. +',+ 2d55 *+-, +%,. ....-U....$
+-0000000000000000: 43,/ 0/70 7c68 /),% /-)- 0) C..p|h.....$
+-0000000000000000: -)1e ,%)- .&61 5f/# 57/* 0*0* .....a_.W...$
+-0000000000000000: /$7c +-21 6b-. ,%2c .0)$ 0(,+ 72 .|.!k..,....r$
+-0000000000000000: **0c +!-, .$-0 2b0# 60,. 7f0- 6b,! ......+.`...k.$
+-0000000000000000: 0a0. -(06 0.16 .&1b 57*! //*. 6f0. 0) ........W...o..$
+-0000000000000000: +(0d 54,+ /$/. 0%)! .)3e .#,% 413b +$/* ..T......>..A;..$
+-0000000000000000: )%,0 5a70 ,&0b 6c)+ +.++ +/4f ,*3d 0*-/ ..Zp..l....O.=..$
+-0000000000000010: 0, .$
+-0000000000000000: +,,# )!5d 0f+/ ++73 /.07 21,- ,$29 +"-* ...]...s..!..)..$
+-0000000000000010: )-,/ ..$
+-0000000000000000: )&0b .,2a ),*0 55-/ ,)-. ,+7f 200c +*** ...*..U..... ...$
+-0000000000000010: 2b-- 5e +.^$
+-0000000000000000: +*+/ 4536 .,2e 7c36 6c4e 0#*/ 6f-% +$1d ..E6..|6lN..o...$
+-0000000000000010: .+.& ,0-) ....$
+-0000000000000000: /0.- ,).+ 4d*& .)0a 1b,. +/*& 0/0! 0a38 ....M..........8$
+-0000000000000010: +$,/ +/+0 -. .....$
+-0000000000000000: ,/0/ +*2e 4c*' /!-! ,.0' 7b3b 666b /+,* ....L.....{;fk..$
+-0000000000000010: 0,1b 3e0d 0d56 ..>..V$
+-0000000000000000: +-+/ 620c ,0/# 5c*+ +%*0 *0.$ 01/+ 32-/ ..b...\.......2.$
+-0000000000000010: 09+/ /.0" .%-0 6b ......k$
+-0000000000000000: +,0a 3a75 6f/. 150c 0f73 (0/% 5c4a 2f58 ..:uo....s..\J/X$
+-0000000000000010: 41). 45/& )+/+ 0c79 A.E....y$
+-0000000000000000: ,-0# 66+% ,.0% 0.05 /'-/ +)0+ 4f30 66+& ..f.........O0f.$
+-0000000000000010: 06-- 2d5b 3a/" 5a+* ,+ ..-[:.Z..$
+-0000000000000000: 5b3a .+0- .*77 0,/0 23)% ),5d 7a6d 400# [:...w..#..]zm@.$
+-0000000000000010: --0% 1b.. 5a.# 3f1d 0d)) ....Z.?...$
+-0000000000000000: 0,/& /*,+ .%0' 0,/% -!5d /"+# 171d /+,# .........]......$
+-0000000000000010: 0*/& /#,( /./. ,-24 -)+# .. .......$...$
+-0000000000000000: 7b*. +.77 .!-" //34 195f /$20 -$,, *!/+ {..w...4._. ....$
+-0000000000000010: /%/* +++# /%.+ 546b +/7d 0%2d ......Tk.}.-$
+-0000000000000000: 0*-, 75-" .'** /.4b 0f.- )'/! /)0$ +/,& ..u....K........$
+-0000000000000010: 62)( //,% //,. 18/* 0,78 /&.* +- b........x...$
+-0000000000000000: +)1a ./,- 41-& +&35 /!(0 )#/* ,+7a 0")% ....A..5.....z..$
+-0000000000000010: +**. 0!1a 23+$ 3712 58). +*./ 5a/. ....#.7.X...Z.$
+-0000000000000000: 2336 .++. *&.( 751e /$.# -(+/ 51.' .&+0 #6....u.....Q...$
+-0000000000000010: ,-5a .#66 ,/3d .,+$ 3838 0e+/ 0)0. 04 .Z.f.=..88.....$
+-0000000000000000: /%., /'0, .!1a )/6c *.4f */4d -#33 0.,( .......l.O.M.3..$
+-0000000000000010: ,'/) /%13 -/70 ..+# .',# -.+, /0*/ 0,,. .....p..........$
+-0000000000000000: ).5e .$-! -&." 0-)- 0f0, *!-) //0* (0/( .^..............$
+-0000000000000010: 3f67 213d 6f79 .+00 -(1e ++.0 30+% 7d5d ?g!=oy......0.}]$
+-0000000000000020: +* .$
+-0000000000000000: 7f1f 42/$ /+3b ..** 1b// 5d)# -/2c 3f,' ..B..;....]..,?.$
+-0000000000000010: 20,/ 393d 377c ,*52 5c33 0f/+ +%2f 33.( .9=7|.R\3.../3.$
+-0000000000000020: 0(-) ..$
+-0000000000000000: *#,! +#-+ /*4e 39.+ ,/+& 79*# .$/( )--+ .....N9...y.....$
+-0000000000000010: 4b-/ 0b0e .*,. 63-- 0#0. 611a .+)% /!,# K.....c...a.....$
+-0000000000000020: ..0# 0$ ...$
+-0000000000000000: **4d /#0/ /$,* -.0d 135f ,'7a ++18 *-0d .M......._.z....$
+-0000000000000010: .%0. /0+' ,/01 3f/, 67.0 -,1a 420& 40+" ......?.g...B.@.$
+-0000000000000020: -)// 1709 ....$
+-0000000000000000: /$3f 02., *+*- 0a.$ 0/6c 0*+/ 0,2c .+-0 .?.......l...,..$
+-0000000000000010: 6f)/ 0e1d 4a0( 7472 7a-$ /(+' +067 4c0/ o...J.trz....gL.$
+-0000000000000020: 58,* //1d 08 X....$
+-0000000000000000: 0b-* ,++! )!0/ ,!/- /+,+ -**# +-.- -#,) ................$
+-0000000000000010: ,,0/ 372c .$)- .-36 -!6f *!31 ,$/, ,,.. ..7,...6.o.1....$
+-0000000000000020: --1e ,,*( .05e .....^$
+-0000000000000000: 6a+/ 4c)% +,1c 2d77 *++' */77 .*6b 7a,- j.L...-w...w.kz.$
+-0000000000000010: //7b /%0* 7b.' 6d*, ,&)- *+60 ,$-% +&28 .{..{.m....`...($
+-0000000000000020: 62+$ 6e-+ +/.! +* b.n....$
+-0000000000000000: 0/1e 57-/ .+,& 2a0a +*,# +*47 6105 +*," ..W...*....Ga...$
+-0000000000000010: +,-+ /!,- ,%1d .$,, +/." ,%0+ +/21 .'*( .............!..$
+-0000000000000020: +%18 5d2c 0.5e 040& ..],.^..$
+-0000000000000000: -!63 0a2e *+4e 097a 49.' 4a0e ..,( 33., .c...N.zI.J...3.$
+-0000000000000010: .!-/ 3e,) 4d)- -$00 /#*$ 703d ,.4a +.63 ..>.M.....p=.J.c$
+-0000000000000020: //)+ .'0f -,*' 0-/! 5c ........\$
+-0000000000000000: ,**- 6e0& 4220 7673 +!/# 2c,% -/)! ,',- ..n.B vs..,.....$
+-0000000000000010: .%)) .,/% 01-- 3d-* 2c," 0.-! 27/+ 4d.( ......=.,...'.M.$
+-0000000000000020: 0$.! 241e *,)& 0e42 --0* ..$....B..$
+-0000000000000000: 1e," 230! 342a ./-0 7b.! 4457 /*-/ +06e ..#.4*..{.DW...n$
+-0000000000000010: /)0" -,0b 01/% .+,# /+61 ,+5a 0!-0 5f31 .........a.Z.._1$
+-0000000000000020: )+7c +.+. /"3a ,.,' 2d+* .) .|...:..-..$
+-0000000000000000: )..! ,(., /,7b ++07 -"*! 06+. -.-+ )*/* .....{..........$
+-0000000000000010: +',# 7b,% 05+, 1e60 -#.) *-+- -.,* .*4a ..{....`.......J$
+-0000000000000020: /"7d )!26 3807 7b+/ .+75 --/) .}.&8.{..u..$
++0000000000000000: fe .$
++0000000000000000: 4baa K.$
++0000000000000000: 2a3e ed *>.$
++0000000000000000: 7b4a e9bc {J..$
++0000000000000000: 5747 f6dc 5f WG.._$
++0000000000000000: 6f7b adac 01bf o{....$
++0000000000000000: 84cc 96ef dc0b cc .......$
++0000000000000000: eeaa 9423 9db1 8d6e ...#...n$
++0000000000000000: 1ab5 d7d2 74c4 668f 9d ....t.f..$
++0000000000000000: c3be a7bb 2d55 9bcc a5be ....-U....$
++0000000000000000: 43bf ff70 7c68 e9b5 ed8d f9 C..p|h.....$
++0000000000000000: c91e b58d d661 5fe3 57ea fafa .....a_.W...$
++0000000000000000: e47c ad21 6bce b52c e084 f8bb 72 .|.!k..,....r$
++0000000000000000: 9a0c a1cc d4d0 2bf3 60be 7ffd 6bb1 ......+.`...k.$
++0000000000000000: 0afe c806 fe16 d61b 5791 ef9e 6ffe f9 ........W...o..$
++0000000000000000: a80d 54bb e4ee f581 d93e d3b5 413b a4ea ..T......>..A;..$
++0000000000000000: 85c0 5a70 b60b 6c8b aeab af4f ba3d facf ..Zp..l....O.=..$
++0000000000000010: fc .$
++0000000000000000: acb3 815d 0faf ab73 ee07 21bd b429 a2ca ...]...s..!..)..$
++0000000000000010: 8dbf ..$
++0000000000000000: 860b dc2a 8ca0 55cf b9ce bb7f 200c aa9a ...*..U..... ...$
++0000000000000010: 2bcd 5e +.^$
++0000000000000000: aaaf 4536 dc2e 7c36 6c4e f39f 6fc5 a41d ..E6..|6lN..o...$
++0000000000000010: dbd6 c0c9 ....$
++0000000000000000: f0dd b9db 4d96 d90a 1bbe af96 fff1 0a38 ....M..........8$
++0000000000000010: a4bf afb0 ce .....$
++0000000000000000: bfff aa2e 4c97 e1c1 bef7 7b3b 666b ebba ....L.....{;fk..$
++0000000000000010: fc1b 3e0d 0d56 ..>..V$
++0000000000000000: adaf 620c c0e3 5c9b a5a0 a0d4 01eb 32cf ..b...\.......2.$
++0000000000000010: 09af eef2 d5d0 6b ......k$
++0000000000000000: ac0a 3a75 6fee 150c 0f73 80e5 5c4a 2f58 ..:uo....s..\J/X$
++0000000000000010: 418e 45e6 8beb 0c79 A.E....y$
++0000000000000000: bdf3 66a5 bef5 fe05 e7cf a9fb 4f30 66a6 ..f.........O0f.$
++0000000000000010: 06cd 2d5b 3ae2 5aaa bb ..-[:.Z..$
++0000000000000000: 5b3a dbfd da77 fcf0 2385 8c5d 7a6d 40f3 [:...w..#..]zm@.$
++0000000000000010: cdf5 1bde 5ad3 3f1d 0d89 ....Z.?...$
++0000000000000000: fce6 eabb d5f7 fce5 c15d e2a3 171d ebb3 .........]......$
++0000000000000010: fae6 e3b8 eeee bd24 c9a3 de .......$...$
++0000000000000000: 7b9e ae77 d1c2 ef34 195f e420 c4bc 91eb {..w...4._. ....$
++0000000000000010: e5ea aba3 e5db 546b af7d f52d ......Tk.}.-$
++0000000000000000: facc 75c2 d79a ee4b 0fdd 87e1 e9f4 afb6 ..u....K........$
++0000000000000010: 6288 efb5 efbe 18ea fc78 e6da ad b........x...$
++0000000000000000: a91a dfbd 41c6 a635 e180 83ea bb7a f285 ....A..5.....z..$
++0000000000000010: aa9e f11a 23a4 3712 588e aadf 5aee ....#.7.X...Z.$
++0000000000000000: 2336 dbae 96d8 751e e4d3 c8af 51d7 d6b0 #6....u.....Q...$
++0000000000000010: bd5a d366 bf3d dca4 3838 0eaf f9fe 04 .Z.f.=..88.....$
++0000000000000000: e5dc e7fc d11a 8f6c 9e4f 9f4d c333 feb8 .......l.O.M.3..$
++0000000000000010: b7e9 e513 cf70 dea3 d7b3 ceac f09f fcbe .....p..........$
++0000000000000000: 8e5e d4c1 c6d2 fd8d 0ffc 91c9 effa 80e8 .^..............$
++0000000000000010: 3f67 213d 6f79 db00 c81e abe0 30a5 7d5d ?g!=oy......0.}]$
++0000000000000020: aa .$
++0000000000000000: 7f1f 42e4 eb3b de9a 1bef 5d83 cf2c 3fb7 ..B..;....]..,?.$
++0000000000000010: 20bf 393d 377c ba52 5c33 0feb a52f 33d8 .9=7|.R\3.../3.$
++0000000000000020: f8c9 ..$
++0000000000000000: 93b1 a3cb ea4e 39db bfa6 7993 d4e8 8dcb .....N9...y.....$
++0000000000000010: 4bcf 0b0e dabe 63cd f3fe 611a db85 e1b3 K.....c...a.....$
++0000000000000020: def3 f4 ...$
++0000000000000000: 9a4d e3ff e4ba ce0d 135f b77a ab18 9d0d .M......._.z....$
++0000000000000010: d5fe f0a7 bf01 3fec 67e0 cc1a 42f6 40a2 ......?.g...B.@.$
++0000000000000020: c9ef 1709 ....$
++0000000000000000: e43f 02dc 9b9d 0ad4 ff6c faaf fc2c dbd0 .?.......l...,..$
++0000000000000010: 6f8f 0e1d 4af8 7472 7ac4 e8a7 b067 4cff o...J.trz....gL.$
++0000000000000020: 58ba ef1d 08 X....$
++0000000000000000: 0bca bba1 81ff b1ed ebbb ca93 addd c3b9 ................$
++0000000000000010: bcff 372c d48d dd36 c16f 9131 b4ec bcde ..7,...6.o.1....$
++0000000000000020: cd1e bc98 e05e .....^$
++0000000000000000: 6aaf 4c85 ac1c 2d77 9ba7 9f77 da6b 7abd j.L...-w...w.kz.$
++0000000000000010: ef7b e5fa 7bd7 6d9c b68d 9b60 b4c5 a628 .{..{.m....`...($
++0000000000000020: 62a4 6ecb afd1 aa b.n....$
++0000000000000000: ff1e 57cf dbb6 2a0a aab3 aa47 6105 aab2 ..W...*....Ga...$
++0000000000000010: accb e1bd b51d d4bc afd2 b5fb af21 d798 .............!..$
++0000000000000020: a518 5d2c fe5e 04f6 ..],.^..$
++0000000000000000: c163 0a2e 9b4e 097a 49d7 4a0e deb8 33dc .c...N.zI.J...3.$
++0000000000000010: d1cf 3eb9 4d8d c400 e394 703d be4a ae63 ..>.M.....p=.J.c$
++0000000000000020: ef8b d70f cc97 fde1 5c ........\$
++0000000000000000: ba9d 6ef6 4220 7673 a1e3 2cb5 cf81 b7bd ..n.B vs..,.....$
++0000000000000010: d589 dce5 01cd 3dca 2cb2 fec1 27eb 4dd8 ......=.,...'.M.$
++0000000000000020: f4d1 241e 9c86 0e42 cdfa ..$....B..$
++0000000000000000: 1eb2 23f1 342a dfd0 7bd1 4457 eacf b06e ..#.4*..{.DW...n$
++0000000000000010: e9f2 cc0b 01e5 dbb3 eb61 bb5a f1d0 5f31 .........a.Z.._1$
++0000000000000020: 8b7c aeae e23a beb7 2daa d9 .|...:..-..$
++0000000000000000: 8ed1 b8dc ec7b ab07 c291 06ae cecb 8aea .....{..........$
++0000000000000010: a7b3 7bb5 05ac 1e60 c3d9 9dad ceba da4a ..{....`.......J$
++0000000000000020: e27d 8126 3807 7baf db75 cde9 .}.&8.{..u..$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 75 ==============================================================
